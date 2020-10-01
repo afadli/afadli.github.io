@@ -6,10 +6,10 @@ function sendEmail(){
     console.log(firstName.value +"\n"+ lastName.value +"\n"+ email.value+"\n"+message.value);
     // update info by yours 
     Email.send({
-        //Host : "smtp.gmail.com",
-        //Username : "demdouma6@gmail.com",
-        //Password : "denilson",
-        SecureToken : "5b5e358e-04ee-49d3-bc75-a992df680f27",
+        Host : "smtp.mail.yahoo.com",
+        Username : "denilson_ma",
+        Password : "@Bderrahmane3",
+        //SecureToken : "5b5e358e-04ee-49d3-bc75-a992df680f27",
         To : email.value,
         From : "info@naturalstartlearning.org",
         Subject : "Information requested",
