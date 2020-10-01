@@ -6,8 +6,8 @@ function sendEmail(){
     console.log(firstName.value +"\n"+ lastName.value +"\n"+ email.value+"\n"+message.value);
     // update info by yours 
     Email.send({
-        Host : "smtp.mail.yahoo.com",
-        Username : "denilson_ma",
+        Host : "smtp.mail.yahoo.fr",
+        Username : "denilson_ma@yahoo.fr",
         Password : "@Bderrahmane3",
         //SecureToken : "5b5e358e-04ee-49d3-bc75-a992df680f27",
         To : email.value,
