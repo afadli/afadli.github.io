@@ -9,7 +9,7 @@ function sendEmail(){
         //Host : "smtp.gmail.com",
         //Username : "demdouma6@gmail.com",
         //Password : "denilson",
-        SecureToken : "0d2b6225-57fa-477a-84e3-2f123393aef2",
+        SecureToken : "5b5e358e-04ee-49d3-bc75-a992df680f27",
         To : email.value,
         From : "info@naturalstartlearning.org",
         Subject : "Information requested",
