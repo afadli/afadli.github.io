@@ -7,12 +7,12 @@ function sendEmail(){
     // update info by yours 
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "sender@gmail.com",
-        Password : "password!",
+        Username : "demdouma6@gmail.com",
+        Password : "denilson",
         //or  SecureToken : "b347577b-ba33-4cb4-9794-e312044a9488",
-        To : 'to@gmail.com',
-        From : "sender@gmail.com",
-        Subject : "This is the subject",
+        To : email.value,
+        From : "info@naturalstartlearning.org",
+        Subject : "Information requested",
         Body : `<div class="canvas" style="width: 100%;">
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; background-color: rgb(245, 245, 245);" id="bodyTable">
 <tbody><tr>
