@@ -598,7 +598,65 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
         <script src="./wp-includes/js/main.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-  <script type="text/javascript" src="./wp-includes/js/mail.js"></script>
+  <!--script type="text/javascript" src="./wp-includes/js/mail.js"></script-->
+<script type="text/javascript">
+      var clientId = '288989549604-np6pmlpfnah9bnd15iunf1kvgj9khnfi.apps.googleusercontent.com';
+      var apiKey = 'AIzaSyC7cztrrh2IM95BUCQc1Ru6zxblj-J2IxA';
+      var scopes =
+        'https://www.googleapis.com/auth/gmail.readonly '+
+        'https://www.googleapis.com/auth/gmail.send';
 
+      function handleClientLoad() {
+        gapi.client.setApiKey(apiKey);
+        window.setTimeout(checkAuth, 1);
+      }
+
+      function checkAuth() {
+        gapi.auth.authorize({
+          client_id: clientId,
+          scope: scopes,
+          immediate: true
+        }, handleAuthResult);
+      }
+
+      function handleAuthClick() {
+        gapi.auth.authorize({
+          client_id: clientId,
+          scope: scopes,
+          immediate: false
+        }, handleAuthResult);
+        return false;
+      }
+
+      function handleAuthResult(authResult) {
+        if(authResult && !authResult.error) {
+          loadGmailApi();
+          $('#authorize-button').remove();
+          $('.table-inbox').removeClass("hidden");
+          $('#compose-button').removeClass("hidden");
+        } else {
+          $('#authorize-button').removeClass("hidden");
+          $('#authorize-button').on('click', function(){
+            handleAuthClick();
+          });
+        }
+      }
+
+      function sendEmail()
+      {
+        $('#send-button').addClass('disabled');
+
+        sendMessage(
+          {
+            'To': $('#email').val(),
+            //'Subject': $('#compose-subject').val()
+            'Subject': 'Information Request'
+          },
+          $('#message').val(),
+          composeTidy
+        );
+
+        return false;
+      }
 </body>
 </html>
