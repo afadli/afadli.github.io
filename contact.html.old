@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="./wp-content/uploads/2020/09/cropped-4d2dede2-c72b-438e-adb3-a694156eff58-2-192x192.png"/>
+	<link rel="icon" type="image/png" href="./wp-includes/images/icons/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="./wp-includes/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="./wp-includes/vendor/animate/animate.css">
@@ -346,8 +346,7 @@ body:not(.home) header#masthead {
 </ul>
 </li>
 <li  id="menu-item-12706" class="menu-item menu-item-type-custom menu-item-object-custom parent_menu_bizberg "><a><span class="eb_menu_title">Get involved</span></a></li>
-<!--li  id="menu-item-12708" class="menu-item menu-item-type-custom menu-item-object-custom parent_menu_bizberg "><a><span class="eb_menu_title">Contact</span></a></li-->
-<li  id="menu-item-12402" class="menu-item menu-item-type-custom menu-item-object-custom parent_menu_bizberg "><a href="contact.html"><span class="eb_menu_title">Contact</span></a></li>
+<li  id="menu-item-12708" class="menu-item menu-item-type-custom menu-item-object-custom parent_menu_bizberg "><a><span class="eb_menu_title">Contact</span></a></li>
 
 	    	<li class="menu-item search_wrapper">
 	    		<div class="header-search">
