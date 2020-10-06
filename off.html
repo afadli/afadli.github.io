@@ -8,8 +8,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="./wp-content/uploads/2020/09/cropped-4d2dede2-c72b-438e-adb3-a694156eff58-2-32x32.png" sizes="32x32"/>
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="icon" type="image/png" href="./wp-includes/images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="./wp-includes/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="./wp-includes/vendor/animate/animate.css">
 <!--===============================================================================================-->
@@ -31,7 +31,7 @@
 <link rel="alternate" type="application/rss+xml" title="Nature Start Learning Center &raquo; Flux" href="./feed/" />
 <link rel="alternate" type="application/rss+xml" title="Nature Start Learning Center &raquo; Flux des commentaires" href="./comments/feed/" />
 		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"file:\/\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"file:\/\/\/wp-includes\/js\/wp-emoji-release.min.js"}};
 			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style type="text/css">
@@ -370,7 +370,7 @@ body:not(.home) header#masthead {
 <div class="container-contact100">
 	<div class="wrap-contact100">
 		
-		<form class="contact100-form validate-form" onsubmit="event.preventDefault();">
+		<form class="contact100-form validate-form" method="POST" action="send.php">
 			<span class="contact100-form-title">
 				Send Us A Message
 			</span>
@@ -410,7 +410,7 @@ body:not(.home) header#masthead {
 			</div>
 		</form>
 		
-		<div class="contact100-more flex-col-c-m" style="background-image: url('./wp-includes/images/bg-01.jpg');">
+		<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
 			<div class="flex-w size1 p-b-47">
 				<!-- <div class="txt1 p-r-25">
 					<span class="lnr lnr-map-marker"></span>
@@ -428,7 +428,7 @@ body:not(.home) header#masthead {
 			</div>
 
 			<div class="dis-flex size1 p-b-47">
-				<div class="txt1 p-r-2">
+				<div class="txt1 p-r-25">
 					<span class="lnr lnr-phone-handset"></span>
 				</div>
 
@@ -444,7 +444,7 @@ body:not(.home) header#masthead {
 			</div>
 
 			<div class="dis-flex size1 p-b-47">
-				<div class="txt1 p-r-2">
+				<div class="txt1 p-r-25">
 					<span class="lnr lnr-envelope"></span>
 				</div>
 
